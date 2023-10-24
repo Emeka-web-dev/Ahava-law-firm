@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #262121;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;  
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0; /* Removes the space the buttons occupied */
+}
+
+/* @layer components {
+ .big-image-custom {
+  @apply bg-no-repeat bg-cover bg-center;
+  background-color: var(--bg-url);
+ }
+}; */
