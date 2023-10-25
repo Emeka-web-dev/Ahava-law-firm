@@ -20,7 +20,7 @@ function AboutPoint({ title, point, pointImg, index }: Props) {
     <FramerContainer
       initial={{ scaleX: 1.2, opacity: 0 }}
       whileInView={{ scaleX: 1, opacity: 1 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 1.5 }}
       viewport={{once: true}}
       className="w-[90%] md:h-[28rem] mx-auto relative"
     >

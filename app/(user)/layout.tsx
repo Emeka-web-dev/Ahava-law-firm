@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/ReactToastify.min.css";
 import "../globals.css";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-[100vh] overflow-x-hidden`}>
+      <body className={cn(inter.className, "min-h-screen overflow-x-hidden bg-[#262121] ")}>
         <Header />
         <main className="">{children}</main>
         <Footer />

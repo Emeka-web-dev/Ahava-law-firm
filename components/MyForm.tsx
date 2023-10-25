@@ -1,7 +1,7 @@
 "use client";
 
 import emailJs from "@emailjs/browser";
-import { useFormik, ErrorMessage } from "formik";
+import { useFormik } from "formik";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import * as Yup from "yup";
@@ -75,7 +75,7 @@ export default function MyForm() {
           value={formik.values.name}
           onChange={formik.handleChange}
           placeholder="Enter your name"
-          className="w-3/4 border-none rounded-md focus:border-b-[#FADBBA] focus:ring-[#FADBBA] bg-[#262121]"
+          className="w-3/4 border-none rounded-md focus:border-b-[#FADBBA] focus:ring-[#FADBBA] bg-[#262121] p-2"
         />
       </div>
       <div className="my-2">
@@ -88,7 +88,7 @@ export default function MyForm() {
           value={formik.values.email}
           onChange={formik.handleChange}
           placeholder="Enter your email"
-          className="w-3/4 border-none rounded-md bg-[#262121] focus:border-b-[#FADBBA] focus:ring-[#FADBBA]"
+          className="w-3/4 border-none rounded-md bg-[#262121] focus:border-b-[#FADBBA] focus:ring-[#FADBBA] p-2"
         />
       </div>
       <div className="my-2">
@@ -101,7 +101,7 @@ export default function MyForm() {
           value={formik.values.phone}
           onChange={formik.handleChange}
           placeholder="Enter your phone number"
-          className="w-3/4 border-none rounded-md focus:border-b-[#FADBBA] bg-[#262121] focus:ring-[#FADBBA]"
+          className="w-3/4 border-none rounded-md focus:border-b-[#FADBBA] bg-[#262121] focus:ring-[#FADBBA] p-2"
         />
       </div>
       <div>
@@ -113,7 +113,7 @@ export default function MyForm() {
           id="message"
           value={formik.values.message}
           onChange={formik.handleChange}
-          className="w-3/4 border-none rounded-md focus:border-b-[#FADBBA] focus:ring-[#FADBBA] bg-[#262121]"
+          className="w-3/4 border-none rounded-md focus:border-b-[#FADBBA] focus:ring-[#FADBBA] bg-[#262121] p-2"
           placeholder="Write your message"
           rows={3}
         ></textarea>

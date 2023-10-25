@@ -25,16 +25,14 @@ async function Banner() {
       <div className="max-w-6xl mx-auto flex px-3 lg:px-0">
         <FramerContainer
           initial={{
-            y: -500,
             opacity: 0,
             scale: 0.5,
           }}
           animate={{
-            y: 0,
             opacity: 1,
             scale: 1,
           }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.5 }}
           className="flex flex-col items-center justify-center md:max-w-[60%] gap-3"
         >
           <h1 className="text-4xl lg:text-6xl font-bold text-center text-[#FADBBA]">
@@ -54,7 +52,7 @@ async function Banner() {
             opacity: 1,
             scale: 1,
           }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.5 }}
           className="md:flex items-end hidden"
         >
           <Image
